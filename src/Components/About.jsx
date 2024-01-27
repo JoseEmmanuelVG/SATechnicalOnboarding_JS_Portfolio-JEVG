@@ -1,51 +1,34 @@
 /**
  * About component
  *
- * Space for you to describe more about yourself.
+ * This is a space for you to learn more about a 21-year-old Mexican guy,
+ * passionate about Mechatronics Engineering and technology.
  */
 
 import React from "react";
 
-/**
- * About background image
- *
- * Below is a sample image. Upload the image of your choice into the "images"
- * directory and import here for use. Then, set imageAltText to string that 
- * represents what you see in that image.
- *
- * Need an image? Check out https://unsplash.com to download a image you
- * freely use on your site.
- */
-import image from "../images/motion-background.jpg";
+import image from "../images/MLSA_TO_About2-JEVG.png";
 
-const imageAltText = "purple and blue abstract background";
+const imageAltText = "DALLE AI image from MLSA thecnical Onboarduing";
 
-/**
- * Sort description that expands on your title on the Home component.
- */
 const description =
-  "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.";
-
-/**
- * List of some of skills or technologies you work on, are learning,
- * passionate about, or enjoy,
- */
+  "I'm a student of Mechatronics Engineering at UPIITA - IPN, with a passion for technology, soccer, and video games. I am always keen to learn and share my knowledge.";
+// Updated skills list
 const skillsList = [
-  "Web design",
-  "User experience",
-  "Inclusive design",
-  "Focus group testing",
-  "Mobile user interfaces",
-  "Graphic design",
+  "Java, JavaScript",
+  "C/C++, C#",
+  "Python, PHP, Matlab",
+  "VHDL, Assembly language",
+  "Ladder diagrams, Pneumatic methods",
+  "HTML, CSS, Node.js, SQL - MySQL, Git",
+  "GitHub, Azure, WordPress",
+  "Microsoft 365, GIMP, Canva",
+  "NetBeans, MikroC, Visual Studio Code, Matlab",
+  "SolidWorks, AutoCad, Proteus, FluidSIM, ISE Design, Multisim, OrCAD, STEP7 MicroWIN",
 ];
 
-/**
- * Use this to give more information about what you are passionate about,
- * how you best work, or even a quote. This will help someone learn more
- * about you on a professional level.
- */
 const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all.";
+  "As a Microsoft Learn Student Ambassador Alpha, I am dedicated to exploring and learning new technologies. Curious and introverted in new spaces, I am committed to my studies and excited about the future of engineering and technology.";
 
 const About = () => {
   return (
@@ -54,15 +37,16 @@ const About = () => {
       <div
         style={{
           backgroundColor: "white",
-          width: "50%",
+          width: "60%",
           padding: "4rem",
           margin: "3rem auto",
           textAlign: "center",
         }}
       >
-        <h2>About Myself</h2>
+        <h2>About Me</h2>
         <p className="large">{description}</p>
         <hr />
+        <h3>Skills</h3>
         <ul
           style={{
             textAlign: "left",
@@ -72,8 +56,8 @@ const About = () => {
             gap: "3rem",
           }}
         >
-          {skillsList.map((skill) => (
-            <li key={skill}>{skill}</li>
+          {skillsList.map((skill, index) => (
+            <li key={index}>{skill}</li>
           ))}
         </ul>
         <hr />

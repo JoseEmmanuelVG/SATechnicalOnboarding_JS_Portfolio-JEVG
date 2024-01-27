@@ -19,7 +19,7 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/design-desk.jpeg";
+import image from "../images/MLSA_TO_Portafolio-JEVG.png";
 
 const imageAltText = "desktop with books and laptop";
 
@@ -29,30 +29,74 @@ const imageAltText = "desktop with books and laptop";
  * An array of objects that will be used to display for your project
  * links section. Below is a sample, update to reflect links you'd like to highlight.
  */
+
+const NaltonPaiyProject = () => {
+  return (
+    <div style={{ backgroundColor: "#f5f5f5", padding: "1rem", marginBottom: "3rem" }}>
+      <h3 style={{ textAlign: "center" }}>NALTON PAIY APP</h3>
+      <div style={{ display: "flex", justifyContent: "space-around", alignItems: "top" }}>
+        <div style={{ flex: 1 }}>
+          <h4>Description</h4>
+          <p>
+            Cryptocurrency project: The proposal is an innovative application designed to facilitate
+            user interaction with financial transactions, using Ripple&rsquo;s XRPL (XRP Ledger
+            Testnet) as a demonstration platform. This advanced system allows users to execute
+            transactions simply and directly, using text or voice commands.
+          </p>
+          <a
+            href="https://lp-nalton-3b514b803893.herokuapp.com/ecosystem"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Landing Page
+          </a>
+        </div>
+
+        <div style={{ flex: 1 }}>
+          <h4>Azure implementation:</h4>
+          <p>Migrate to a more comprehensive cloud solution like Azure Cloud:</p>
+          <ul>
+            <li>Use key vault to save the secrets keys</li>
+            <li>Use Azure Cosmos Db to save the images</li>
+            <li>Use the Azure open AI services for full Azure Cloud connection Apis</li>
+          </ul>
+          <a
+            href="https://github.com/JoseEmmanuelVG/-Ambassador-AI-Project---Nalton-pAIy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Ambassador-AI-Project
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const projectList = [
   {
-    title: "10 Things To Know About Azure Static Web Apps 🎉",
+    title: "Bonzopedia",
     description:
-      "Collaboration to create a beginner friendly article to help explain Azure Static Web Apps and tooling to get started.",
-    url: "https://dev.to/azure/10-things-to-know-about-azure-static-web-apps-3n4i",
+      "Bonzopedia is a page created to develop in a comparative way diverse topics and to solve doubts, discovering the truth by learning in a comparative way..",
+    url: "https://bonzopedia.com/",
   },
   {
-    title: "Web Development for Beginners",
+    title: "Smart-Fridge-CheckList",
     description:
-      "Contributed sketch note imagery to accompany each lesson. These help provide visual representation of what is being taught.",
-    url: "https://github.com/microsoft/web-dev-for-beginners",
+      "Design model applying object-oriented programming concepts to create an application related to Industry 4.0 and the Internet of Things.",
+    url: "https://github.com/JoseEmmanuelVG/Smart-Fridge-CheckList",
   },
   {
-    title: "My Resume Site",
+    title: "NASA-SPACE-APPS-CHALLENGE-2021---JEVG",
     description:
-      "Created from Microsoft's resume workshop and deployed to GitHub pages. Includes my experience and design abilities.",
-    url: "https://github.com/microsoft/workshop-library/tree/main/full/build-resume-website",
+      "Create prototypes and methodologies to incorporate Earth observations with local open data for identifying risks with science and communities.",
+    url: "https://github.com/JoseEmmanuelVG/NASA-SPACE-APPS-CHALLENGE-2021---JEVG",
   },
   {
-    title: "GitHub Codespaces and github.dev",
+    title: "PRACTICAS LaunchX-InnovaccionVirtual FRONTEND",
     description:
-      "Video interview to explain when to use GitHub.dev versus GitHub Codespaces, and how best to use each tool.",
-    url: "https://www.youtube.com/watch?v=c3hHhRME_XI",
+      "The Launch X LATAM initiative helps young Latin Americans to become certified as developers. It includes Git basics, programming, CSS, HTML, VueJs, Veux, JavaScript, OOP, database management and Angular..",
+    url: "https://joseemmanuelvg.github.io/FrontEnd-Mision_JEVG.html",
   },
 ];
 
@@ -60,6 +104,7 @@ const Portfolio = () => {
   return (
     <section className="padding" id="portfolio">
       <h2 style={{ textAlign: "center" }}>Portfolio</h2>
+      <NaltonPaiyProject />
       <div style={{ display: "flex", flexDirection: "row", paddingTop: "3rem" }}>
         <div style={{ maxWidth: "40%", alignSelf: "center" }}>
           <img
