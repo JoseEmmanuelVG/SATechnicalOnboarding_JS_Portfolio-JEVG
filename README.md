@@ -1,16 +1,21 @@
 ## GitHub Pages & Azure Static Page  Setup:
 
 ### Upload Your Portfolio to GitHub Pages:
+I recomend to use de codspace
+![image](https://github.com/JoseEmmanuelVG/SATechnicalOnboarding_JS_Portfolio-JEVG/assets/89156254/4b6854d5-f9d7-4877-8698-07860fbb90a4)
 
 1. Modify your `package.json` file:
 
    ```json
    "homepage": "https://(YourGitHubName).github.io/(YourRepository)",
-1. Update the "build-gh" script as follows:
-
-    ```json
    "build-gh": "parcel build --public-url 'https://(YourGitHubName).github.io/(YourRepository)'",
+    
+1. In the terminal run:
+
+   ```json
+   "@ ➜ /workspaces/(here is your repo by defect) (main)": "npm run deploy",
 ![image](https://github.com/JoseEmmanuelVG/SATechnicalOnboarding_JS_Portfolio-JEVG/assets/89156254/460e7a61-01ac-43ea-bfb0-19daa34fb8b9)
+... and press enter
 
 3. Go to your GitHub repository settings and verify that the branch "gh-pages" exists. If it doesn't, create it. Wait and update until you get your GitHub Pages link.
 ![image](https://github.com/JoseEmmanuelVG/SATechnicalOnboarding_JS_Portfolio-JEVG/assets/89156254/a98df726-84f6-4b82-b253-ee10c30ccc21)
